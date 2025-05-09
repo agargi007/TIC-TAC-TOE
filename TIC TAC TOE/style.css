@@ -1,0 +1,187 @@
+/* Gradient background for body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Watermark container fixed at bottom center */
+.watermark {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+    user-select: none;
+    color: #444444cc; /* dark grey with some transparency */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1000;
+}
+
+/* Landing page container gradient update */
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Game container gradient update */
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    border-radius: 10px;
+    width: 315px;
+    padding: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Cell styling with subtle gradient and shadow */
+.cell {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border-radius: 5px;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.cell:hover {
+    background: linear-gradient(145deg, #f0f0f0, #dcdcdc);
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+}
+
+/* Buttons with gradient backgrounds */
+.landing-btn {
+    margin: 15px 0;
+    padding: 16px 60px;
+    font-size: 28px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0 4px 8px rgba(118,75,162,0.4);
+}
+
+.landing-btn:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.game--restart {
+    padding: 10px 30px;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0 4px 8px rgba(24,90,157,0.4);
+}
+
+.game--restart:hover {
+    background: linear-gradient(135deg, #185a9d 0%, #43cea2 100%);
+}
+
+.game--back {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #555555 0%, #222222 100%);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0 4px 8px rgba(34,34,34,0.6);
+}
+
+.game--back:hover {
+    background: linear-gradient(135deg, #222222 0%, #555555 100%);
+}
+
+/* Game status text color update */
+.game--status {
+    font-size: 28px;
+    color: #1ed86c;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Full-page gradient */
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.game--title {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #222;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.landing-btn {
+    margin: 15px 0;
+    padding: 16px 60px;
+    font-size: 28px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(118,75,162,0.2);
+}
+
+.landing-btn:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.watermark {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+    user-select: none;
+    color: #444444cc;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 1000;
+}

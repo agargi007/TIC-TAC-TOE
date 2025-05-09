@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="game--title">TIC TAC TOE</h1>
+    <button class="landing-btn" onclick="startGame('2p')">2 Players</button>
+    <button class="landing-btn" onclick="startGame('cpu')">Computer</button>
+    <div class="watermark">created by Gargi Yekhande</div>
+    <script>
+        function startGame(mode) {
+            window.location.href = `game.html?mode=${mode}`;
+        }
+    </script>
+      
+</body>
+</html>
